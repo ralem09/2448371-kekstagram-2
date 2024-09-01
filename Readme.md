@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Виктор Рогов](https://up.htmlacademy.ru/javascript-individual/2/user/2448371).
-* Наставник: [`Анна Лисененкова :)`](https://htmlacademy.ru/profile/ankhena).
+* Наставник: [Анна Лисененкова :)](https://htmlacademy.ru/profile/ankhena).
 ---
 
 _Не удаляйте и не изменяйте самовольно файлы и папки:_
