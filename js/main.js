@@ -1,24 +1,19 @@
-// id, число — идентификатор опубликованной фотографии. Это число от 1 до 25. Идентификаторы не должны повторяться.
+const MIN_PHOTO_ID = 1;
+const MAX_PHOTO_ID = 25;
 
-// url, строка — адрес картинки вида photos/{{i}}.jpg, где {{i}} — это число от 1 до 25. Адреса картинок не должны повторяться.
-
-// description, строка — описание фотографии. Описание придумайте самостоятельно.
-
-// likes, число — количество лайков, поставленных фотографии. Случайное число от 15 до 200.
-
-// comments, массив объектов — список комментариев, оставленных другими пользователями к этой фотографии. Количество комментариев к каждой фотографии — случайное число от 0 до 30. Все комментарии генерируются случайным образом. Пример описания объекта с комментарием:
-
-/* Варианты функций, для генерации уникальных id(чисел)
-1. генерирровать числа по порядку (использовать счетчик и замыкания)
-2. генирировать случайные числа в диапозоне  и проверять уникальность
-3.сделать константы ко всем числам
-
-*/
 const POST_LENGTH = 25;
+
+const MIN_COMMENT_ID = 0;
+const MAX_COMMENT_ID = 500;
+
 const MIN_COMMENTS = 0;
 const MAX_COMMENTS = 30;
+
 const MIN_LIKES = 15;
 const MAX_LIKES = 200;
+
+const MIN_AVATAR_ID = 1;
+const MAX_AVATAR_ID = 6;
 
 const NAMES = [
   'Василий',
@@ -78,11 +73,11 @@ const getRandomIdFromRangeGenerator = (min, max) => {
   };
 };
 
-const generateRandomPhotoId = getRandomIdFromRangeGenerator(1, 25);
-const randomCommentId = getRandomIdFromRangeGenerator(0, 500);
+const generateRandomPhotoId = getRandomIdFromRangeGenerator(MIN_PHOTO_ID, MAX_PHOTO_ID);
+const randomCommentId = getRandomIdFromRangeGenerator(MIN_COMMENT_ID, MAX_COMMENT_ID);
 
 const comment = () => {
-  const createAvatarUrl = `img/avatar-${getRandomInteger(1, 6)}.svg`;
+  const createAvatarUrl = `img/avatar-${getRandomInteger(MIN_AVATAR_ID, MAX_AVATAR_ID)}.svg`;
   const randomCommentIndex = getRandomInteger(0, TEXT_COMMENTS.length - 1);
   const randomNameIndex = getRandomInteger(0, NAMES.length - 1);
   return {
