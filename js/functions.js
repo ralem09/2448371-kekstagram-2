@@ -61,3 +61,27 @@ console.log(bestQuestion('8:0', '10:0', '8:0', 120));
 console.log(bestQuestion('08:00', '14:30', '14:00', 90));
 console.log(bestQuestion('14:00', '17:30', '08:0', 90));
 console.log(bestQuestion('8:00', '17:30', '08:00', 900));
+
+
+
+// Доп задание от Наставника
+// функция,Которая принимает номер квартиры и количество этажей и количество квартир на этаже
+// узнать подъезд и этаж
+// 1. Считает квартир в подъезде (apartmentsEntrance)
+// 2. В каком подъезде квартира (entrance)
+// 3. На каком этаже квартира (positionInEntrance)
+
+const whatEntranceAndFloor = function (roomNumber, numberFloors, apartmentsPerFloor) {
+  if (roomNumber <= 0 || numberFloors <= 0 || apartmentsPerFloor <= 0) {
+    return "Данные не правильные";
+  }
+  const apartmentsEntrance = numberFloors * apartmentsPerFloor;
+  const entrance = Math.ceil(roomNumber / apartmentsEntrance);
+  const positionInEntrance = roomNumber - (entrance - 1) * apartmentsEntrance;
+  const floor = Math.ceil(positionInEntrance / apartmentsPerFloor);
+
+  return `Квартира находится в ${entrance} подъезде на ${floor} этаже.`;
+};
+
+
+console.log(whatEntranceAndFloor(49, 5, 10));
