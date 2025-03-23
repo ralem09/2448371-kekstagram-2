@@ -75,10 +75,10 @@ const createObjectPost = () => {
   const commentsArray = Array.from({ length: commentsNumber }, comment);
   return {
     id: photoId,
-    photo: photoUrl,
-    descriptionPhoto: description,
-    like: likes,
-    comment: commentsArray,
+    url: photoUrl,
+    description: description,
+    likes: likes,
+    comments: commentsArray,
   };
 };
 
