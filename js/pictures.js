@@ -1,17 +1,34 @@
+import { openBigPicture } from './modal.js';
+
 const pictureTemplate = document.querySelector('#picture').content.querySelector('.picture');
-const pictureContainer = document.querySelector('.pictures');
+const pictureContainerTag = document.querySelector('.pictures');
+
+let localData = [];
+
 export const renderPictures = (pictures) => {
-
-
+  localData = [...pictures];
   const createFragment = document.createDocumentFragment();
 
-  pictures.forEach(({ url, description, likes, comments }) => {
+  pictures.forEach(({ id, url, description, likes, comments }) => {
     const picture = pictureTemplate.cloneNode(true);
     picture.querySelector('.picture__img').src = url;
     picture.querySelector('.picture__img').alt = description;
     picture.querySelector('.picture__likes').textContent = likes;
     picture.querySelector('.picture__comments').textContent = comments.length;
+    picture.dataset.id = id;
     createFragment.appendChild(picture);
   });
-  pictureContainer.appendChild(createFragment);
+  pictureContainerTag.appendChild(createFragment);
 };
+
+
+pictureContainerTag.addEventListener('click', ({target}) => {
+  const card = target.closest('.picture');
+
+  if (card) {
+    const id = Number(card.dataset.id);
+    const currentPhoto = localData.find((item) => item.id === id);
+    openBigPicture(currentPhoto);
+  }
+});
+
