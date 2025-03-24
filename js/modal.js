@@ -3,7 +3,6 @@ const closeButtonTag = bigPictureTag.querySelector('.big-picture__cancel');
 const commentsContainer = document.querySelector('.social__comments');
 
 
-// bigPictureTag.querySelector('.social__comment-shown-count').textContent = currentPicture.comments.length;
 const renderComments = (comments) => {
   commentsContainer.innerHTML = '';
 
@@ -33,6 +32,7 @@ export const openBigPicture = (currentPicture) => {
   renderComments(currentPicture.comments);
   bigPictureTag.querySelector('.big-picture__img img').src = currentPicture.url;
   bigPictureTag.querySelector('.likes-count').textContent = currentPicture.likes;
+  bigPictureTag.querySelector('.social__comment-shown-count').textContent = currentPicture.comments.length;
   bigPictureTag.querySelector('.social__comment-total-count').textContent = currentPicture.comments.length;
   bigPictureTag.querySelector('.social__caption').textContent = currentPicture.description;
   bigPictureTag.querySelector('.social__comment-count').classList.add('hidden');
