@@ -1,0 +1,105 @@
+[33mcommit 4baa66caf2cab162e1db1394fca795b2a061c25c[m[33m ([m[1;36mHEAD -> [m[1;32mmodule7-task1[m[33m)[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Mar 23 01:06:40 2025 +0500
+
+    Создание постов
+
+[33mcommit 12233f9dfb96d9d5183b3c84fe37e31fd5a3fb8e[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31macademy/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 9cfe054 20351f1
+Author: Unknown Keks <keksobot@users.noreply.github.com>
+Date:   Mon Feb 10 19:03:09 2025 +0300
+
+    Merge pull request #4 from ralem09/module5-task1
+
+[33mcommit 20351f18ae67402b4d56f19807720b499165ab5b[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Fri Feb 7 22:23:33 2025 +0500
+
+    разбитие на модули
+
+[33mcommit 9cfe05424edf4511c6f6058740cd64ab0f3c1506[m
+Merge: f67f96f 94a4a5d
+Author: Unknown Keks <keksobot@users.noreply.github.com>
+Date:   Tue Feb 4 19:02:28 2025 +0300
+
+    Merge pull request #3 from ralem09/module4-task1
+
+[33mcommit 94a4a5dc7341667dd5fac19b9d0cba00b1840dc5[m[33m ([m[1;31morigin/module4-task1[m[33m, [m[1;32mmodule4-task1[m[33m)[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Thu Jan 30 13:35:09 2025 +0500
+
+    правка ошибок
+
+[33mcommit 6b3ccb34ee5c236be5a8c1ac0e974d4e349748d5[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Jan 26 14:17:45 2025 +0500
+
+    генерация случайного поста с фото
+
+[33mcommit eac06ab4fc63c7a0a9aa92c49d2ade24b7b3ac8d[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Thu Jan 23 09:54:02 2025 +0500
+
+    Test
+
+[33mcommit f67f96fd52f585993cbcfec97b0fe609e56990dc[m
+Merge: 5625a12 c4d3a18
+Author: Unknown Keks <keksobot@users.noreply.github.com>
+Date:   Sun Oct 6 21:03:20 2024 +0300
+
+    Merge pull request #2 from ralem09/module2-task1
+
+[33mcommit c4d3a189d36f643e6abc2d1ccc3d36aa6bba9984[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;32mmodule2-task1[m[33m)[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Oct 6 22:47:38 2024 +0500
+
+    Правки в первом задание
+
+[33mcommit 7ed8b220a45af6e44346c705dfe0400aacdc0f0a[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Oct 6 21:09:52 2024 +0500
+
+    Выполнил первое практическое задание по функциям
+
+[33mcommit 5625a12e4314e3653e63f04574a2cc972dbab2ad[m
+Merge: caadc42 1ebd79b
+Author: Unknown Keks <keksobot@users.noreply.github.com>
+Date:   Sun Sep 22 20:40:23 2024 +0300
+
+    Merge pull request #1 from ralem09/module1-task1
+
+[33mcommit 1ebd79b76268f0ddf369892cbe9aacae87681184[m[33m ([m[1;31morigin/module1-task1[m[33m, [m[1;32mmodule1-task1[m[33m)[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Sep 1 14:51:59 2024 +0500
+
+    Редактирование файлов
+
+[33mcommit 18c790146862af10f929c83865586628e497cabb[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Sep 1 14:47:45 2024 +0500
+
+    Редактирование файлов
+
+[33mcommit 0479c1b0121a79328566354254f5024fa0d56b04[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Sun Sep 1 14:44:59 2024 +0500
+
+    Редактирование файлов
+
+[33mcommit 02015d096f75cd7f5f4c676472769fad738259ea[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Thu Aug 29 17:42:30 2024 +0500
+
+    Добавил наставника
+
+[33mcommit 75b17de99033159e55e2d6a8da55a1a64dfbe01f[m
+Author: ralem09 <ralem09@gmail.com>
+Date:   Mon Aug 26 22:34:11 2024 +0500
+
+    Изменил файл readme
+
+[33mcommit caadc426388cd94ce1d2032e0ceaff73c9c50099[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Sat Aug 24 20:28:50 2024 +0300
+
+    :hatching_chick:
