@@ -73,7 +73,6 @@ export const openBigPicture = (currentPicture) => {
   document.addEventListener('keydown', closeBigPictureOnEsc);
 };
 
-
 function hideModal() {
   showModal(false);
   document.removeEventListener('keydown', closeBigPictureOnEsc);
