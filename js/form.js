@@ -1,3 +1,5 @@
+import { isValid, reset as resetValidation} from './validation.js';
+import {reset as resetScale} from './scale.js';
 
 
 const formTag = document.querySelector('.img-upload__form');
@@ -29,7 +31,7 @@ uploadImageTag.addEventListener('change', () => {
 });
 
 closeButtonTag.addEventListener('click', (evt) => {
-  evt.preventDeault();
+  evt.preventDefault();
   closeModal();
 });
 

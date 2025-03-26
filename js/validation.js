@@ -1,4 +1,4 @@
-const MAX_DESCRIPTION = 6;
+const MAX_DESCRIPTION = 140;
 const HASHTAG_FORMULA = /^#[a-zA-Zа-яА-ЯёЁ0-9]{1,19}/;
 const MAX_HASHTAGS = 5;
 
@@ -35,27 +35,26 @@ const validateHashtag = (value) => {
 pristine.addValidator(
   descriptionTag,
   validateDescription,
-
+  `Текст не должен превышать ${MAX_DESCRIPTION} символов`
 );
 
 pristine.addValidator(
   hashtagsTag,
   checkUniqueHashtags,
-
+  'Хештеги не должны повторяться',
 );
 
 pristine.addValidator(
   hashtagsTag,
   checkHashtagsCount,
-
+  `Количество хештегов не должно превышать ${MAX_HASHTAGS}`,
 );
 
 pristine.addValidator(
   hashtagsTag,
   validateHashtag,
-
+  'Хештег содержит недопустимые символы',
 );
-
 
 export const isValid = () => pristine.validate();
 
