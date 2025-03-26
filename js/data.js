@@ -61,7 +61,7 @@ const comment = () => {
   return {
     id: randomCommentId(),
     avatar: createAvatarUrl,
-    comment: TEXT_COMMENTS[randomCommentIndex],
+    message: TEXT_COMMENTS[randomCommentIndex],
     name: NAMES[randomNameIndex],
   };
 };
