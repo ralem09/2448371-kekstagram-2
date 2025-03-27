@@ -1,6 +1,4 @@
-const MAX_DESCRIPTION = 140;
-const HASHTAG_FORMULA = /^#[a-zA-Zа-яА-ЯёЁ0-9]{1,19}/;
-const MAX_HASHTAGS = 5;
+import { HASHTAG_FORMULA, MAX_DESCRIPTION, MAX_HASHTAGS } from './сonstants.js';
 
 const formTag = document.querySelector('.img-upload__form');
 const descriptionTag = formTag.querySelector('.text__description');

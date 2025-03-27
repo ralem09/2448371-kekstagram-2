@@ -1,8 +1,4 @@
-const SCALE_MIN = 25;
-const SCALE_MAX = 100;
-const SCALE_STEP = 25;
-const SCALE_DEFAULT = SCALE_MAX;
-const SCALE_FACTOR = 0.01;
+import { SCALE_MIN, SCALE_MAX, SCALE_DEFAULT, SCALE_FACTOR, SCALE_STEP } from './сonstants.js';
 
 const formTag = document.querySelector('.img-upload__form');
 const minusTag = formTag.querySelector('.scale__control--smaller');

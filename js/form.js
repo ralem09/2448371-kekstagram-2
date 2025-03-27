@@ -1,6 +1,7 @@
 import { isValid, reset as resetValidation} from './validation.js';
 import {reset as resetScale} from './scale.js';
-
+import './slider.js';
+import { reset as resetEffects } from './effects.js';
 
 const formTag = document.querySelector('.img-upload__form');
 const uploadImageTag = formTag.querySelector('.img-upload__input');
@@ -21,9 +22,10 @@ const openModal = () => {
 
 const closeModal = () => {
   showModal(false);
-  resetValidation();
   formTag.reset();
+  resetValidation();
   resetScale();
+  resetEffects();
 };
 
 uploadImageTag.addEventListener('change', () => {
