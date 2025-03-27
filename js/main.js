@@ -1,5 +1,13 @@
-import { posts } from './data.js';
 import { renderPictures } from './pictures.js';
 import './form.js';
+import { getPhotos } from './api.js';
+import { showErrorMessage } from './util.js';
 
-renderPictures(posts);
+getPhotos()
+  .then((posts) => {
+    renderPictures(posts);
+  })
+  .catch(() => {
+    showErrorMessage();
+  });
+

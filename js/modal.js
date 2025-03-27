@@ -1,12 +1,14 @@
+import { removeEscapeControl, setEscapeControl } from './escape-control.js';
+import { COMMENTS_STEP } from './сonstants.js';
+
 const bodyTag = document.body;
 const bigPictureTag = document.querySelector('.big-picture');
 const closeButtonTag = bigPictureTag.querySelector('.big-picture__cancel');
 const commentsContainer = document.querySelector('.social__comments');
 const loaderButtonTag = bigPictureTag.querySelector('.comments-loader');
-const shownCommentsTag = bigPictureTag.querySelector('.social__comment-shown-count')
+const shownCommentsTag = bigPictureTag.querySelector('.social__comment-shown-count');
 const commentTemplate = bigPictureTag.querySelector('.social__comment');
 
-const COMMENTS_STEP = 5;
 let localComments = [];
 let renderedComments = 0;
 
@@ -22,16 +24,11 @@ const renderLoader = () => {
   }
 };
 
-const closeBigPictureOnEsc = (evt) => {
-  if (evt.key === 'Escape') {
-    hideModal();
-  }
-};
-
 const showModal = (isShow = true) => {
   if (isShow) {
     bigPictureTag.classList.remove('hidden');
     bodyTag.classList.add('modal-open');
+    setEscapeControl(hideModal);
   } else {
     bigPictureTag.classList.add('hidden');
     bodyTag.classList.remove('modal-open');
@@ -69,16 +66,14 @@ export const openBigPicture = (currentPicture) => {
   showModal();
   renderModal(currentPicture);
   renderComments(currentPicture.comments);
-
-  document.addEventListener('keydown', closeBigPictureOnEsc);
 };
 
 function hideModal() {
   showModal(false);
-  document.removeEventListener('keydown', closeBigPictureOnEsc);
-};
+}
 
 loaderButtonTag.addEventListener('click', renderComments);
-closeButtonTag.addEventListener('click', hideModal);
-
-
+closeButtonTag.addEventListener('click', () => {
+  hideModal();
+  removeEscapeControl();
+});

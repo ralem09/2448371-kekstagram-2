@@ -31,4 +31,3 @@ pictureContainerTag.addEventListener('click', ({target}) => {
     openBigPicture(currentPhoto);
   }
 });
-
