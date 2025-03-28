@@ -8,6 +8,8 @@ export const SCALE_STEP = 25;
 export const SCALE_DEFAULT = SCALE_MAX;
 export const SCALE_FACTOR = 0.01;
 
+export const COMMENTS_STEP = 5;
+
 export const EFFECTS = {
   NONE: 'none',
   CHROME: 'chrome',
@@ -60,4 +62,14 @@ export const EffectsSettings = {
     unit: '',
     style: 'brightness'
   },
+};
+
+export const POPUPS = {
+  SUCCESS: 'success',
+  ERROR: 'error'
+};
+
+export const SubmitCaptions = {
+  IDLE: 'Опубликовать',
+  SENDING: 'Публикую...'
 };
