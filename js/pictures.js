@@ -5,8 +5,15 @@ const pictureContainerTag = document.querySelector('.pictures');
 
 let localData = [];
 
+const clear = () => {
+  document.querySelectorAll('.picture').forEach((item) => {
+    item.remove();
+  });
+};
+
 export const renderPictures = (pictures) => {
   localData = [...pictures];
+  clear();
   const createFragment = document.createDocumentFragment();
 
   pictures.forEach(({ id, url, description, likes, comments }) => {
@@ -22,7 +29,7 @@ export const renderPictures = (pictures) => {
 };
 
 
-pictureContainerTag.addEventListener('click', ({target}) => {
+pictureContainerTag.addEventListener('click', ({ target }) => {
   const card = target.closest('.picture');
 
   if (card) {

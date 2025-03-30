@@ -1,9 +1,10 @@
 import { removeEscapeControl, setEscapeControl } from './escape-control.js';
 import { POPUPS } from './сonstants.js';
 
+
 const successTemplate = document.querySelector('#success').content.querySelector('.success');
 const errorTemplate = document.querySelector('#error').content.querySelector('.error');
-const body = document.body;
+const bodyTag = document.body;
 
 const templates = {
   [POPUPS.SUCCESS]: successTemplate,
@@ -21,5 +22,5 @@ export const showPopup = (type = POPUPS.SUCCESS) => {
   setEscapeControl(() => {
     popup.remove();
   });
-  body.append(popup);
+  bodyTag.append(popup);
 };

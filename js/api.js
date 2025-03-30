@@ -1,4 +1,6 @@
-export const getPhotos = () => fetch('https://31.javascript.htmlacademy.pro/kekstagram/data')
+import { SERVERDATA, SERVERURL } from './сonstants.js';
+
+export const getPhotos = () => fetch(SERVERDATA)
   .then((response) => {
     if (!response.ok) {
       throw new Error();
@@ -6,7 +8,7 @@ export const getPhotos = () => fetch('https://31.javascript.htmlacademy.pro/keks
     return response.json();
   });
 
-export const postPhoto = (body) => fetch('https://31.javascript.htmlacademy.pro/kekstagram', {
+export const postPhoto = (body) => fetch(SERVERURL, {
   method: 'POST',
   body: body
 });
