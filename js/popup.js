@@ -1,7 +1,6 @@
 import { removeEscapeControl, setEscapeControl } from './escape-control.js';
 import { POPUPS } from './сonstants.js';
 
-
 const successTemplate = document.querySelector('#success').content.querySelector('.success');
 const errorTemplate = document.querySelector('#error').content.querySelector('.error');
 const bodyTag = document.body;
