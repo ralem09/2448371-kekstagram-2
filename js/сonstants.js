@@ -1,5 +1,5 @@
 export const MAX_DESCRIPTION = 140;
-export const HASHTAG_FORMULA = /^#[a-zA-Zа-яА-ЯёЁ0-9]{1,19}/;
+export const HASHTAG_FORMULA = /^#[a-zA-Zа-яА-ЯёЁ0-9]{1,19}$/;
 export const MAX_HASHTAGS = 5;
 
 export const SCALE_MIN = 25;
@@ -78,7 +78,7 @@ export const TIMEERROR = 5000;
 export const DEBOUNCETIME = 500;
 
 export const SERVERDATA = 'https://31.javascript.htmlacademy.pro/kekstagram/data';
-export const SERVERURL = 'https://31.javascript.htmlacademy.pro/kekstagram';
+export const SERVERURL = 'https://31.javascript.htmlacademy.pro/kekstagram/';
 
 export const FILTERS = {
   DEFAULT: 'filter-default',

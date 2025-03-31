@@ -14,6 +14,14 @@ noUiSlider.create(sliderTag, {
   },
   start: 80,
   connect: 'lower',
+  format: {
+    to: function (value) {
+      return parseFloat(value);
+    },
+    from: function (value) {
+      return parseFloat(value);
+    },
+  },
 });
 
 const renderImage = () => {
