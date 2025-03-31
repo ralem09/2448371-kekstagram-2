@@ -1,3 +1,5 @@
+import { DEBOUNCETIME, TIMEERROR } from './сonstants.js';
+
 const dataErrorTemplate = document.querySelector('#data-error').content.querySelector('.data-error');
 const body = document.body;
 
@@ -6,5 +8,13 @@ export const showErrorMessage = () => {
   body.append(messageTag);
   setTimeout(() => {
     messageTag.remove();
-  }, 5000);
+  }, TIMEERROR);
+};
+
+export const debounce = (callback, timeoutDelay = DEBOUNCETIME) => {
+  let timeoutId;
+  return (...rest) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => callback.apply(this, rest), timeoutDelay);
+  };
 };

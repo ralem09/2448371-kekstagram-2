@@ -73,3 +73,15 @@ export const SubmitCaptions = {
   IDLE: 'Опубликовать',
   SENDING: 'Публикую...'
 };
+
+export const TIMEERROR = 5000;
+export const DEBOUNCETIME = 500;
+
+export const SERVERDATA = 'https://31.javascript.htmlacademy.pro/kekstagram/data';
+export const SERVERURL = 'https://31.javascript.htmlacademy.pro/kekstagram';
+
+export const FILTERS = {
+  DEFAULT: 'filter-default',
+  RANDOM: 'filter-random',
+  DISCUSSED: 'filter-discussed',
+};
