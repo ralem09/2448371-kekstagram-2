@@ -55,5 +55,4 @@ pristine.addValidator(
 );
 
 export const isValid = () => pristine.validate();
-
 export const reset = () => pristine.reset();
