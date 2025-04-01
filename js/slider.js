@@ -57,6 +57,6 @@ export const reset = () => {
   renderImage();
 };
 
-export const init = () => {
+export const showSlider = () => {
   sliderContainerTag.classList.remove('hidden');
 };

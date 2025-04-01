@@ -1,4 +1,4 @@
-import { updateSlider, reset as resetSlider, init as initSlider,} from './slider.js';
+import { updateSlider, reset as resetSlider, showSlider as initSlider,} from './slider.js';
 import { EFFECTS } from './сonstants.js';
 
 const effectsTag = document.querySelector('.effects');
