@@ -18,7 +18,6 @@ minusTag.addEventListener('click', () => {
   render();
 });
 
-
 plusTag.addEventListener('click', () => {
   currentScale = (currentScale + SCALE_STEP <= SCALE_MAX) ? currentScale + SCALE_STEP : SCALE_MAX;
   render();

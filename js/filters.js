@@ -9,7 +9,7 @@ let photos = [];
 
 const debouncedRender = debounce(renderPictures);
 
-export const initializePhotos = (data) => {
+export const renderFilters = (data) => {
   photos = [...data];
   filtersTag.classList.remove('img-filters--inactive');
 };
